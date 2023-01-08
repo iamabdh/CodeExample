@@ -14,20 +14,24 @@ public class CodeExample {
 	}
 	
 	
-	public  HashMap<String, ArrayList<Integer>> OddEvenNumber (int[] arr) {
+	public  HashMap<String, ArrayList<Integer>> OddEvenNumber (Integer[] arr) {
 		HashMap<String, ArrayList<Integer>> oddEvenNumberResultHashMap = new HashMap<String, ArrayList<Integer>>();
 		oddEvenNumberResultHashMap.put("even", new ArrayList<Integer>());
 		oddEvenNumberResultHashMap.put("odd", new ArrayList<Integer>());
-		for (int i = 0; i < arr.length; i ++) {
-			if (arr[i] % 2 == 0) {
-				ArrayList<Integer> oddEvenResultArrayList = oddEvenNumberResultHashMap.get("even");
-				oddEvenResultArrayList.add(arr[i]);
-				oddEvenNumberResultHashMap.put("even", oddEvenResultArrayList);
-			} else {
-				ArrayList<Integer> oddEvenResultArrayList = oddEvenNumberResultHashMap.get("odd");
-				oddEvenResultArrayList.add(arr[i]);
-				oddEvenNumberResultHashMap.put("odd", oddEvenResultArrayList);
+		try {
+			for (int i = 0; i < arr.length; i ++) {
+				if (arr[i] % 2 == 0) {
+					ArrayList<Integer> oddEvenResultArrayList = oddEvenNumberResultHashMap.get("even");
+					oddEvenResultArrayList.add(arr[i]);
+					oddEvenNumberResultHashMap.put("even", oddEvenResultArrayList);
+				} else {
+					ArrayList<Integer> oddEvenResultArrayList = oddEvenNumberResultHashMap.get("odd");
+					oddEvenResultArrayList.add(arr[i]);
+					oddEvenNumberResultHashMap.put("odd", oddEvenResultArrayList);
+				}
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 		return oddEvenNumberResultHashMap;
 	}
