@@ -37,5 +37,14 @@ public class CodeExampleTest {
 		resultHashMap.put("output", 1);
 		assertEquals(resultHashMap, cExample.POW(0, 0));
 	}
+	
+	@Test
+	@DisplayName("null")
+	public void POWTestCase4() {
+		CodeExample cExample = new CodeExample();
+		HashMap<String, Integer> resultHashMap = new HashMap<String, Integer>();
+		resultHashMap.put("output", null);
+		assertEquals(resultHashMap, cExample.POW(null, null));
+	}
 
 }

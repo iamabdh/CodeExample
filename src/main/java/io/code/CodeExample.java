@@ -11,17 +11,22 @@ public class CodeExample {
 		return a;
 	}
 	
-	public  HashMap<String, Integer> POW(int a, int b) {
+	public   HashMap<String, Integer> POW(Integer a, Integer b) {
 		HashMap<String, Integer> outpHashMap = new HashMap<String, Integer>();
 		outpHashMap.put("output", a);
-		int g = a;
-		if (b == 0) {
-			a = 1;
-		} else  {
-			for (int i  = 1; i < b; i ++) {
-				a *= g;
+		Integer g = a;
+		try {
+			if (b == 0) {
+				a = 1;
+			} else  {
+				for (int i  = 1; i < b; i ++) {
+					a *= g;
+				}
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
+		
 		outpHashMap.put("output", a);
 		return outpHashMap;
 	}
