@@ -25,6 +25,7 @@ public class CodeExampleTest {
 	public void SplitStringUsingDlimeterCase2() {
 		CodeExample cExample = new CodeExample();
 		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		expectedTeStrings.add("");
 		assertEquals(expectedTeStrings, cExample.reverseStringWithString("", " "));
 	}
 	
@@ -44,6 +45,7 @@ public class CodeExampleTest {
 	public void SplitStringUsingDlimeterCase4() {
 		CodeExample cExample = new CodeExample();
 		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		expectedTeStrings.add("");
 		assertEquals(expectedTeStrings, cExample.reverseStringWithString("", ""));
 	}
 
