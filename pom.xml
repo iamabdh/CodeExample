@@ -4,7 +4,15 @@
   <artifactId>io.code</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>CodeExampleTesting</name>
+<<<<<<< HEAD
         <dependencies>
+=======
+<<<<<<< HEAD
+        <dependencies>
+=======
+      <dependencies>
+>>>>>>> main
+>>>>>>> main
     <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
@@ -21,4 +29,12 @@
 </dependency>
 
     </dependencies>
+<<<<<<< HEAD
 </project>
+=======
+<<<<<<< HEAD
+</project>
+=======
+</project>
+>>>>>>> main
+>>>>>>> main
