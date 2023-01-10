@@ -40,8 +40,10 @@ public class CodeExample {
 					} 
 				i ++;
 			}
+
 		} catch (Exception e) {
 			// TODO: handle exception
+			
 		}
 		
 		return stack.isEmpty();

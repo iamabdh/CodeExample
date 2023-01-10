@@ -1,6 +1,7 @@
 package io.code;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,13 @@ public class CodeExampleTest {
 	void CheckValidStatementTestCase2() {
 		CodeExample cExample = new CodeExample();
 		assertEquals(true, cExample.checkingValidStatementBalance("  "));
+	}
+	
+	@Test
+	@DisplayName("Can throw an exception.")
+	void CheckValidStatementTestCase3() {
+		CodeExample cExample = new CodeExample();
+		assertEquals(Exception.class, cExample.checkingValidStatementBalance(""));
 	}
 
 }
