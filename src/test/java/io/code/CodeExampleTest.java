@@ -1,16 +1,34 @@
 package io.code;
 
+<<<<<<< HEAD
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+=======
 import static org.junit.Assert.assertEquals;
 
 <<<<<<< HEAD
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+>>>>>>> main
 
 public class CodeExampleTest {
 
 
 	@Test
+<<<<<<< HEAD
+	@DisplayName("Take null for both of the arguments.")
+	public void SplitStringUsingDlimeterCase1() {
+		CodeExample cExample = new CodeExample();
+		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		assertEquals(expectedTeStrings, cExample.reverseStringWithString(null, null));
+=======
 	@DisplayName("String as argument")
 	public void ReveseStringTestCase1() {
 		CodeExample cExample = new CodeExample();
@@ -105,10 +123,39 @@ public class CodeExampleTest {
 		resultHashMap.put("even", evenNumbersArrayList);
 		resultHashMap.put("odd", oddNumbersArrayList);
 		assertEquals(resultHashMap, cExample.OddEvenNumber(new Integer[] {1, 3, 4, 6}));
+>>>>>>> main
 	}
 	
 	
 	@Test
+<<<<<<< HEAD
+	@DisplayName("Take an empty string as the first argument.")
+	public void SplitStringUsingDlimeterCase2() {
+		CodeExample cExample = new CodeExample();
+		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		expectedTeStrings.add("");
+		assertEquals(expectedTeStrings, cExample.reverseStringWithString("", " "));
+	}
+	
+	
+	@Test
+	@DisplayName("Take an empty string as the second argument.")
+	public void SplitStringUsingDlimeterCase3() {
+		CodeExample cExample = new CodeExample();
+		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		List<String> reStrings = Arrays.asList("e", "m", " " , "e", "s", "r", "e", "v", "e", "r");
+		expectedTeStrings.addAll(reStrings);
+		assertEquals(expectedTeStrings, cExample.reverseStringWithString("reverse me", ""));
+	}
+	
+	@Test
+	@DisplayName("Return an empty array.")
+	public void SplitStringUsingDlimeterCase4() {
+		CodeExample cExample = new CodeExample();
+		ArrayList<String> expectedTeStrings = new ArrayList<String>();
+		expectedTeStrings.add("");
+		assertEquals(expectedTeStrings, cExample.reverseStringWithString("", ""));
+=======
 	@DisplayName("Empty array as an argument.")
 	public void OddEvenTestCase2() {
 		CodeExample cExample = new CodeExample();
@@ -158,6 +205,7 @@ public class CodeExampleTest {
 		resultHashMap.put("even", evenNumbersArrayList);
 		resultHashMap.put("odd", oddNumbersArrayList);
 		assertEquals(resultHashMap, cExample.OddEvenNumber(null));
+>>>>>>> main
 >>>>>>> main
 >>>>>>> main
 	}
