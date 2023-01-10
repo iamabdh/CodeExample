@@ -4,12 +4,13 @@ import java.util.Stack;
 
 public class CodeExample {
 	
-	public static void main(String[] arg) {
+
+	public static void main(String[] arg) throws Exception {
 		System.out.println(checkingValidStatementBalance(null));
 		
 	}
 	
-	public static boolean checkingValidStatementBalance(String str) {
+	public static boolean checkingValidStatementBalance(String str) throws Exception {
 		Stack<Character> stack = new Stack<Character>();
 		int i = 0;
 		try {
@@ -43,7 +44,8 @@ public class CodeExample {
 
 		} catch (Exception e) {
 			// TODO: handle exception
-			
+			System.out.println("something went wrong");
+			throw e;
 		}
 		
 		return stack.isEmpty();

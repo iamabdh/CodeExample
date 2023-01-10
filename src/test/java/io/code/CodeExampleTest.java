@@ -10,21 +10,21 @@ public class CodeExampleTest {
 
 	@Test
 	@DisplayName("Take null as an arguments.")
-	void CheckValidStatementTestCase1() {
+	void CheckValidStatementTestCase1() throws Exception {
 		CodeExample cExample = new CodeExample();
 		assertEquals(true, cExample.checkingValidStatementBalance(null));
 	}
 	
 	@Test
 	@DisplayName("Take an empty string as an argument.")
-	void CheckValidStatementTestCase2() {
+	void CheckValidStatementTestCase2() throws Exception {
 		CodeExample cExample = new CodeExample();
 		assertEquals(true, cExample.checkingValidStatementBalance("  "));
 	}
 	
 	@Test
 	@DisplayName("Can throw an exception.")
-	void CheckValidStatementTestCase3() {
+	void CheckValidStatementTestCase3() throws Exception {
 		CodeExample cExample = new CodeExample();
 		assertEquals(Exception.class, cExample.checkingValidStatementBalance(""));
 	}
