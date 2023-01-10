@@ -7,7 +7,11 @@
 <<<<<<< HEAD
         <dependencies>
 =======
+<<<<<<< HEAD
+        <dependencies>
+=======
       <dependencies>
+>>>>>>> main
 >>>>>>> main
     <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -28,5 +32,9 @@
 <<<<<<< HEAD
 </project>
 =======
+<<<<<<< HEAD
 </project>
+=======
+</project>
+>>>>>>> main
 >>>>>>> main

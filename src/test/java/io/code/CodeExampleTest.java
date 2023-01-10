@@ -2,6 +2,13 @@ package io.code;
 
 <<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrowsExactly;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+=======
+<<<<<<< HEAD
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,11 +24,32 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 >>>>>>> main
+>>>>>>> main
 
 public class CodeExampleTest {
 
 
 	@Test
+<<<<<<< HEAD
+	@DisplayName("Take null as an arguments.")
+	void CheckValidStatementTestCase1() throws Exception {
+		CodeExample cExample = new CodeExample();
+		assertEquals(true, cExample.checkingValidStatementBalance(null));
+	}
+	
+	@Test
+	@DisplayName("Take an empty string as an argument.")
+	void CheckValidStatementTestCase2() throws Exception {
+		CodeExample cExample = new CodeExample();
+		assertEquals(true, cExample.checkingValidStatementBalance("  "));
+	}
+	
+	@Test
+	@DisplayName("Can throw an exception.")
+	void CheckValidStatementTestCase3() throws Exception {
+		CodeExample cExample = new CodeExample();
+		assertEquals(Exception.class, cExample.checkingValidStatementBalance(""));
+=======
 <<<<<<< HEAD
 	@DisplayName("Take null for both of the arguments.")
 	public void SplitStringUsingDlimeterCase1() {
@@ -205,6 +233,7 @@ public class CodeExampleTest {
 		resultHashMap.put("even", evenNumbersArrayList);
 		resultHashMap.put("odd", oddNumbersArrayList);
 		assertEquals(resultHashMap, cExample.OddEvenNumber(null));
+>>>>>>> main
 >>>>>>> main
 >>>>>>> main
 >>>>>>> main
