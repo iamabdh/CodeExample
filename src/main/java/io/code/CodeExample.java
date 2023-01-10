@@ -1,10 +1,14 @@
 package io.code;
 
 <<<<<<< HEAD
+import java.util.ArrayList;
+=======
+<<<<<<< HEAD
 =======
 import java.util.ArrayList;
 >>>>>>> main
 import java.util.HashMap;
+>>>>>>> main
 
 public class CodeExample {
 	
@@ -15,6 +19,24 @@ public class CodeExample {
 		return a;
 	}
 	
+<<<<<<< HEAD
+	public  String reverseString(String str) {
+		ArrayList<Character> strCharsArrayList = new ArrayList<Character>();
+		String newString = new String();
+		try {
+			for (int i = str.length() - 1; i >= 0; i--) {
+				strCharsArrayList.add(str.charAt(i));
+			}
+			
+			for (int i = 0; i < strCharsArrayList.size(); i ++) {
+				newString += strCharsArrayList.get(i);
+			}
+				
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return newString;
+=======
 <<<<<<< HEAD
 	public   HashMap<String, Integer> POW(Integer a, Integer b) {
 		HashMap<String, Integer> outpHashMap = new HashMap<String, Integer>();
@@ -54,6 +76,7 @@ public class CodeExample {
 		return outpHashMap;
 =======
 		return oddEvenNumberResultHashMap;
+>>>>>>> main
 >>>>>>> main
 	}
 }
